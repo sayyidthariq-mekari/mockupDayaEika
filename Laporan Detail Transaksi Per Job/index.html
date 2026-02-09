@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Import Report</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px; 
+        color: #000;
+        line-height: 1.4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .details-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    .details-table td {
+        padding: 2px 5px;
+        vertical-align: top;
+    }
+
+    .label-col { width: 140px; white-space: nowrap; }
+    .separator-col { width: 15px; text-align: center; }
+    .value-col { font-weight: normal; } 
+    .value-col-bold {font-weight: 800;}
+
+    .container-lists-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 4%; 
+    }
+
+    .list-block {
+        width: 48%;
+    }
+
+    .container-table {
+        width: 100%; 
+        border-collapse: collapse;
+    }
+
+    .container-table thead th {
+        text-align: center;
+        padding: 5px 0;
+        border-bottom: 1px solid #000;
+        font-weight: normal;
+        font-size: 11px;
+    }
+    
+    .container-table tbody td {
+        padding: 4px 0;
+        font-size: 11px;
+        text-align: left;
+    }
+    
+    .col-qty { width: 35%; }      
+    .col-container { width: 45%; } 
+    .col-berat { width: 20%; }    
+
+    .bottom-line {
+        border-bottom: 2px solid #000;
+        margin-top: 2px;
+        width: 100%;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="title">Title: IMPOR</div>
+        <div class="timestamp">08-05-2025  10:13:52</div>
+    </div>
+
+    <table class="details-table">
+        <tr>
+            <td class="label-col">Transaksi</td>
+            <td class="separator-col">:</td>
+            <td class="value-col-bold">Impor</td>
+        </tr>
+        <tr>
+            <td class="label-col">No. & Tgl. Order</td>
+            <td class="separator-col">:</td>
+            <td class="value-col"><span class="value-col-bold">2505031</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07-05-2025</td>
+        </tr>
+        <tr>
+            <td class="label-col">Nama Kapal</td>
+            <td class="separator-col">:</td>
+            <td class="value-col">MTT PANGERANG 060M0W</td>
+        </tr>
+        <tr>
+            <td class="label-col">Tgl Kapal</td>
+            <td class="separator-col">:</td>
+            <td class="value-col">12-05-2025</td>
+        </tr>
+        <tr>
+            <td class="label-col">Party</td>
+            <td class="separator-col">:</td>
+            <td class="value-col">8.00 x 40 FEET HC</td>
+        </tr>
+        <tr><td colspan="3" style="height: 10px;"></td></tr>
+        <tr>
+            <td class="label-col">Customer</td>
+            <td class="separator-col">:</td>
+            <td class="value-col">PT.GERBANG CAHAYA UTAMA</td>
+        </tr>
+        <tr>
+            <td class="label-col">Barang</td>
+            <td class="separator-col">:</td>
+            <td class="value-col"></td>
+        </tr>
+        <tr>
+            <td class="label-col">No. PIB</td>
+            <td class="separator-col">:</td>
+            <td class="value-col"></td>
+        </tr>
+        <tr>
+            <td class="label-col">No. BL</td>
+            <td class="separator-col">:</td>
+            <td class="value-col">SSZ1602018</td>
+        </tr>
+        <tr>
+            <td class="label-col">No. MBL</td>
+            <td class="separator-col">:</td>
+            <td class="value-col"></td>
+        </tr>
+        <tr>
+            <td class="label-col">Keterangan</td>
+            <td class="separator-col">:</td>
+            <td class="value-col">
+                226,200 / 611.2CBM<br>
+                TERIMA DOK & SK ORI 7/5 JAM 17.32
+            </td>
+        </tr>
+    </table>
+
+    <div class="container-lists-wrapper">
+        
+        <div class="list-block">
+            <table class="container-table">
+                <thead>
+                    <tr>
+                        <th class="col-qty">Qty</th>
+                        <th class="col-container">No. Container</th>
+                        <th class="col-berat">Berat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>GAOU6795878</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>RFCU5106747</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>TGBU6823362</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>CMAU4341490</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="bottom-line"></div>
+        </div>
+
+        <div class="list-block">
+            <table class="container-table">
+                <thead>
+                    <tr>
+                        <th class="col-qty">Qty</th>
+                        <th class="col-container">No. Container</th>
+                        <th class="col-berat">Berat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>TGHU6344063</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>BMOU5864506</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>CMAU7264503</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>TCNU2662300</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="bottom-line"></div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
