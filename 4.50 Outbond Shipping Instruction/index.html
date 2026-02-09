@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipping Instruction</title>
+<style>
+    @page {
+        size: A4 portrait;
+        margin: 15mm;
+    }
+
+    body {
+        font-family: "Times New Roman", Times, serif;
+        color: #000;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 210mm;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .title-section {
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .doc-title {
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .doc-number {
+        font-size: 12px;
+    }
+
+    .details-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    .details-table td {
+        vertical-align: top;
+        padding-bottom: 10px;
+    }
+
+    .label-col {
+        width: 180px;
+        white-space: nowrap;
+    }
+
+    .sep-col {
+        width: 20px;
+        text-align: center;
+    }
+
+    .value-col {
+    }
+
+    .voyage-info {
+        margin-left: 50px;
+    }
+
+    .marks-label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .container-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+
+    .container-table td {
+        padding: 5px;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        text-align: left;
+    }
+
+    .col-qty { width: 5%; text-align: center; }
+    .col-size { width: 10%; }
+    .col-cont { width: 20%; }
+    .col-seal { width: 30%; }
+    .col-desc { width: 35%; }
+
+    .footer {
+        text-align: right;
+        margin-top: 40px;
+        margin-right: 50px;
+    }
+
+    .signature-space {
+        margin-top: 60px;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="title-section">
+        <div class="doc-title">SHIPPING INSTRUCTION</div>
+        <div class="doc-number">0002107</div>
+    </div>
+
+    <table class="details-table">
+        <tr>
+            <td class="label-col">To</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">PT. TANTO / UP : DIDI</td>
+        </tr>
+        <tr>
+            <td class="label-col">Shipper</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">
+                MITRA BIMA PERKASA, PT.<br>
+                JL. MESJID NO. 139, KESAWAN, MEDAN BARAT<br><br>
+                061-4577457
+            </td>
+        </tr>
+        <tr>
+            <td class="label-col">Consignee</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">
+                PRIMATRANS JAYA EXPRESS<br>
+                PERAK TIMUR 512 BLOK M1 SURABAYA<br><br>
+                082338355555
+            </td>
+        </tr>
+        <tr>
+            <td class="label-col">Notify Party</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">SAME AS CONSIGNEE</td>
+        </tr>
+        <tr>
+            <td class="label-col">Vessel</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">
+                KM. MERATUS MEDAN 1 
+                <span class="voyage-info">Voy : 439</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="label-col">ETD</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">13-12-2024</td>
+        </tr>
+        <tr>
+            <td class="label-col">Commodity</td>
+            <td class="sep-col">:</td>
+            <td class="value-col"></td>
+        </tr>
+        <tr>
+            <td class="label-col">Details Quantity & Marks</td>
+            <td class="sep-col">:</td>
+            <td class="value-col"></td>
+        </tr>
+        <tr>
+            <td class="label-col">Destination</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">SURABAYA</td>
+        </tr>
+        <tr>
+            <td class="label-col">Party</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">1 x 20 FEET</td>
+        </tr>
+        <tr>
+            <td class="label-col">Term</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">PREPAID</td>
+        </tr>
+        <tr>
+            <td class="label-col">B/L</td>
+            <td class="sep-col">:</td>
+            <td class="value-col">SURRENDERED</td>
+        </tr>
+    </table>
+
+    <div class="marks-label">Marks & Container Number :</div>
+    
+    <table class="container-table">
+        <tr>
+            <td class="col-qty">1</td>
+            <td class="col-size">20 FEET</td>
+            <td class="col-cont">TAKU 2540908</td>
+            <td class="col-seal">F - 267005 / D - 0127257</td>
+            <td class="col-desc">KERETA SORONG</td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <div>Medan 10-01-2025</div>
+        <div>Hormat Kami,</div>
+        <div class="signature-space"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
