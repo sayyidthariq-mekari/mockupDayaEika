@@ -86,42 +86,57 @@ body {
 
 /* Signature Section */
 .signature-section {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
 }
 
-.signature-row-top,
-.signature-row-middle,
-.signature-row-bottom {
+.signature-container {
+    display: flex;
+    gap: 150px;
+    width: 100%;
+}
+
+/* Left Section */
+.signature-left {
+    flex: 0 0 250px;
+}
+
+.signature-left .label-row {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.signature-left .names-row {
+    margin-top: 85px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+/* Right Section */
+.signature-right {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signature-right .date-row {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.signature-right .label-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    gap: 80px;
 }
 
-.left-col,
-.center-col,
-.right-col {
-    flex: 1;
-}
-
-.left-col {
-    text-align: left;
-}
-
-.center-col {
-    text-align: center;
-}
-
-.right-col {
-    text-align: right;
-}
-
-.signature-row-bottom {
-    margin-top: 80px;
-}
-
-.signature-row-bottom .left-col {
+.signature-right .names-row {
     display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
     gap: 80px;
 }
 

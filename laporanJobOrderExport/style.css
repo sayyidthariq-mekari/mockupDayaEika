@@ -33,12 +33,10 @@ body {
 }
 
 .header-right {
+    display: flex;
+    gap: 20px;
     text-align: right;
     font-size: 11px;
-}
-
-.header-right div {
-    line-height: 1.4;
 }
 
 /* Info Section */
