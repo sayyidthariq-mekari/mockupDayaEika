@@ -3,20 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Import Report</title>
+<title>Laporan Detail Transaksi Per Job</title>
 <style>
+    @page {
+        size: A4 portrait;
+        margin: 10mm;     
+    }
+
     body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 11px; 
         color: #000;
         line-height: 1.4;
         margin: 0;
-        padding: 20px;
+        padding: 0;
+        background-color: #fff;
     }
 
     .container {
         width: 100%;
+        max-width: 210mm; 
         margin: 0 auto;
+        padding: 10px; 
+        box-sizing: border-box; 
     }
 
     .header {
@@ -26,9 +35,8 @@
         margin-bottom: 20px;
     }
 
-    .title {
-        font-weight: bold;
-        font-size: 14px;
+    .timestamp {
+        font-size: 11px;
     }
 
     .details-table {
@@ -64,22 +72,24 @@
     }
 
     .container-table thead th {
-        text-align: center; 
-        padding: 5px 0;
+        text-align: left; 
+        padding: 5px 0 2px 0; 
         border-bottom: 1px solid #000;
         font-weight: normal;
         font-size: 11px;
+        vertical-align: bottom;
     }
     
     .container-table tbody td {
-        padding: 4px 0;
+        padding: 2px 0 4px 0;
         font-size: 11px;
         text-align: left; 
+        vertical-align: top;
     }
     
     .col-qty { width: 35%; }      
-    .col-container { width: 45%; } 
-    .col-berat { width: 20%; }    
+    .col-container { width: 40%; } 
+    .col-berat { width: 25%; }    
 
     .full-width-line {
         border-bottom: 2px solid #000;

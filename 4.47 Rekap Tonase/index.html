@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rekap Tonase - Ekspor</title>
+<style>
+    @page {
+        size: A4 landscape;
+        margin: 10mm;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #000;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 297mm;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .report-title {
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: underline;
+        margin: 0;
+    }
+
+    .report-period {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .timestamp {
+        font-size: 11px;
+        text-align: right;
+    }
+
+    .report-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .report-table th, .report-table td {
+        padding: 5px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .report-table thead th {
+        font-weight: bold;
+        border-bottom: 2px solid #000;
+    }
+
+    .header-tonase {
+        text-align: right;
+    }
+
+    .sub-header-row td {
+        font-weight: bold;
+        text-decoration: underline;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    .data-row td {
+        padding: 3px 5px;
+    }
+    
+    .col-tonase {
+        text-align: right;
+    }
+
+    .footer-row td {
+        border-top: 2px solid #000;
+        font-weight: bold;
+        text-align: right;
+    }
+    
+    .final-line-row td {
+        border-top: 3px solid #000;
+        padding: 0;
+    }
+
+    .col-date { width: 8%; }
+    .col-order { width: 8%; }
+    .col-kapal { width: 20%; }
+    .col-customer { width: 20%; }
+    .col-barang { width: 20%; }
+    .col-tonase { width: 15%; }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-top">
+        <div>
+            <h1 class="report-title">REKAP TONASE - EKSPOR</h1>
+            <div class="report-period">
+                Periode : &nbsp;&nbsp; 01/05/2025 &nbsp;&nbsp; sd &nbsp;&nbsp; 08/05/2025
+            </div>
+        </div>
+        <div class="timestamp">
+            08-05-2025 &nbsp;&nbsp; 08:45:15
+        </div>
+    </div>
+
+    <table class="report-table">
+        <thead>
+            <tr>
+                <th class="col-date">Tgl ETD</th>
+                <th class="col-order">No.Order</th>
+                <th class="col-kapal">Kapal</th>
+                <th class="col-customer">Customer</th>
+                <th class="col-barang">Barang</th>
+                <th class="col-tonase header-tonase">Tonase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="sub-header-row">
+                <td colspan="6">PT.MITRA BANDAR NIAGA</td>
+            </tr>
+            <tr class="data-row">
+                <td>03-05-25</td>
+                <td>2505006</td>
+                <td>MTT REYA 25RY017N</td>
+                <td>KAPUAS BESAR, PT.</td>
+                <td>NATURAL RUBBER</td>
+                <td class="col-tonase">111.36 TON(S)</td>
+            </tr>
+            <tr class="data-row">
+                <td>03-05-25</td>
+                <td>2505007</td>
+                <td>MTT REYA 25RY017N</td>
+                <td>KAPUAS BESAR, PT.</td>
+                <td>NATURAL RUBBER</td>
+                <td class="col-tonase">132.96 TON(S)</td>
+            </tr>
+            <tr class="data-row">
+                <td>03-05-25</td>
+                <td>2505008</td>
+                <td>MTT REYA 25RY017N</td>
+                <td>KAPUAS BESAR, PT.</td>
+                <td>NATURAL RUBBER</td>
+                <td class="col-tonase">132.96 TON(S)</td>
+            </tr>
+            <tr class="data-row">
+                <td>05-05-25</td>
+                <td>2504081</td>
+                <td>WAN HAI 323 N048</td>
+                <td>KAPUAS BESAR, PT.</td>
+                <td>NATURAL RUBBER</td>
+                <td class="col-tonase">22.27 TON(S)</td>
+            </tr>
+            <tr class="data-row">
+                <td>05-05-25</td>
+                <td>2504082</td>
+                <td>WAN HAI 323 N048</td>
+                <td>KAPUAS BESAR, PT.</td>
+                <td>NATURAL RUBBER</td>
+                <td class="col-tonase">103.88 TON(S)</td>
+            </tr>
+            <tr class="data-row">
+                <td>05-05-25</td>
+                <td>2504083</td>
+                <td>WAN HAI 323 N048</td>
+                <td>KAPUAS BESAR, PT.</td>
+                <td>NATURAL RUBBER</td>
+                <td class="col-tonase">66.82 TON(S)</td>
+            </tr>
+            <tr class="data-row">
+                <td>05-05-25</td>
+                <td>2504084</td>
+                <td>WAN HAI 323 N048</td>
+                <td>KAPUAS BESAR, PT.</td>
+                <td>NATURAL RUBBER</td>
+                <td class="col-tonase">111.36 TON(S)</td>
+            </tr>
+            <tr class="data-row">
+                <td>07-05-25</td>
+                <td>2505009</td>
+                <td>SINAR BAJO 073N</td>
+                <td>KAPUAS BESAR, PT.</td>
+                <td>NATURAL RUBBER</td>
+                <td class="col-tonase">124.38 TON(S)</td>
+            </tr>
+            <tr class="data-row">
+                <td>07-05-25</td>
+                <td>2505010</td>
+                <td>SINAR BAJO 073N</td>
+                <td>KAPUAS BESAR, PT.</td>
+                <td>NATURAL RUBBER</td>
+                <td class="col-tonase">124.38 TON(S)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="footer-row">
+                <td colspan="5"></td>
+                <td class="col-tonase">930.36</td>
+            </tr>
+            <tr class="final-line-row">
+                <td colspan="6"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</div>
+
+</body>
+</html>

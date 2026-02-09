@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Laporan Job Order Import</title>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 10mm;      
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 210mm; 
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        h1.report-title {
+            text-align: left; 
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #000; 
+        }
+
+        th {
+            text-align: left;
+            padding: 8px;
+            font-weight: bold;
+            border-bottom: 3px solid #000; 
+        }
+
+        td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        .col-short { width: 8%; }
+        .col-date { width: 10%; }
+        .col-med { width: 15%; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="report-title">IMPORT - KAPAL</h1>
+
+        <table class="import-table">
+            <thead>
+                <tr>
+                    <th class="col-short">NO. KAPAL</th>
+                    <th>KAPAL</th>
+                    <th class="col-date">ETA</th>
+                    <th>RELASI</th>
+                    <th class="col-med">NO. HBL</th>
+                    <th class="col-med">NO. MBL</th>
+                    <th>PARTY</th>
+                    <th>BARANG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>MV. SINAR SOLO</td>
+                    <td>10-Feb-26</td>
+                    <td>SINGAPORE</td>
+                    <td>HBL-JKT-001</td>
+                    <td>MBL-SIN-882</td>
+                    <td>PT. MAJU JAYA</td>
+                    <td>SPARE PARTS</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>KM. CERIA</td>
+                    <td>11-Feb-26</td>
+                    <td>PORT KLANG</td>
+                    <td>HBL-PKG-102</td>
+                    <td>MBL-PKG-991</td>
+                    <td>CV. SUMBER ALAM</td>
+                    <td>TEXTILE</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>MV. EVER GREEN</td>
+                    <td>11-Feb-26</td>
+                    <td>SHANGHAI</td>
+                    <td>HBL-SHA-554</td>
+                    <td>MBL-SHA-112</td>
+                    <td>PT. TEKNO MANDIRI</td>
+                    <td>ELECTRONICS</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>MV. OCEAN BLUE</td>
+                    <td>12-Feb-26</td>
+                    <td>BUSAN</td>
+                    <td>HBL-PUS-332</td>
+                    <td>MBL-PUS-776</td>
+                    <td>PT. LOGAM ABADI</td>
+                    <td>STEEL COILS</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>WAN HAI 301</td>
+                    <td>12-Feb-26</td>
+                    <td>KAOHSIUNG</td>
+                    <td>HBL-KAO-998</td>
+                    <td>MBL-KAO-111</td>
+                    <td>PT. PLASTIK INDO</td>
+                    <td>RESIN</td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>MV. MERATUS</td>
+                    <td>13-Feb-26</td>
+                    <td>BANGKOK</td>
+                    <td>HBL-BKK-121</td>
+                    <td>MBL-BKK-009</td>
+                    <td>CV. TANI MAKMUR</td>
+                    <td>RICE</td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>MSC GINA</td>
+                    <td>14-Feb-26</td>
+                    <td>ROTTERDAM</td>
+                    <td>HBL-RTM-445</td>
+                    <td>MBL-RTM-223</td>
+                    <td>PT. KIMIA FARMA</td>
+                    <td>CHEMICALS</td>
+                </tr>
+                <tr>
+                    <td>008</td>
+                    <td>COSCO STAR</td>
+                    <td>15-Feb-26</td>
+                    <td>NINGBO</td>
+                    <td>HBL-NGB-771</td>
+                    <td>MBL-NGB-334</td>
+                    <td>PT. MEBEL BAGUS</td>
+                    <td>FURNITURE</td>
+                </tr>
+                <tr>
+                    <td>009</td>
+                    <td>NYK VESTA</td>
+                    <td>16-Feb-26</td>
+                    <td>TOKYO</td>
+                    <td>HBL-TYO-882</td>
+                    <td>MBL-TYO-551</td>
+                    <td>PT. OTOMOTIF OKE</td>
+                    <td>AUTO PARTS</td>
+                </tr>
+                <tr>
+                    <td>010</td>
+                    <td>MV. NUSANTARA</td>
+                    <td>17-Feb-26</td>
+                    <td>HO CHI MINH</td>
+                    <td>HBL-SGN-119</td>
+                    <td>MBL-SGN-662</td>
+                    <td>PT. KERAMIK INDAH</td>
+                    <td>TILES</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
