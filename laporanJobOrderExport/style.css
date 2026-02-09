@@ -34,7 +34,7 @@ body {
 
 .header-right {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     text-align: right;
     font-size: 11px;
 }
@@ -43,6 +43,20 @@ body {
 .info-section {
     margin-bottom: 15px;
     padding-bottom: 10px;
+}
+
+.info-container {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.info-left {
+    flex: 0 0 300px;
+}
+
+.info-right {
+    flex: 0 0 150px;
 }
 
 .info-row {
@@ -66,15 +80,6 @@ body {
     flex: 1;
 }
 
-.info-row .label-right {
-    margin-left: auto;
-    margin-right: 15px;
-}
-
-.info-row .value-right {
-    font-weight: normal;
-}
-
 /* Table */
 .data-table {
     width: 100%;
@@ -93,9 +98,14 @@ body {
     border-bottom: 2px solid #000;
     padding: 5px 4px;
     text-align: center;
+    vertical-align: middle;
     font-weight: bold;
     font-size: 9px;
     line-height: 1.2;
+}
+
+.data-table th:nth-child(6) {
+    padding-top: 8px;
 }
 
 .data-table td {
@@ -115,18 +125,38 @@ body {
     font-weight: bold;
 }
 
+.data-table tbody tr.main-row td:nth-child(6) {
+    text-align: center;
+    padding-top: 6px;
+}
+
 /* Sub row styling */
 .data-table tbody tr.sub-row td {
     font-weight: normal;
 }
 
-.data-table tbody tr.sub-row td:first-child {
-    font-weight: bold;
-}
-
 /* Detail row styling */
 .data-table tbody tr.detail-row td {
     padding-left: 5px;
+}
+
+/* Merek & Nomor column structure */
+.merek-nomor {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.merek-nomor .kode {
+    min-width: 100px;
+}
+
+.merek-nomor .id-number {
+    min-width: 80px;
+}
+
+.merek-nomor .type {
+    flex: 1;
 }
 
 /* Add bottom border to last detail row of each group */
@@ -166,13 +196,13 @@ body {
 
 .data-table th:nth-child(6),
 .data-table td:nth-child(6) {
-    width: 15%;
+    width: 20%;
     text-align: left;
 }
 
 .data-table th:nth-child(7),
 .data-table td:nth-child(7) {
-    width: 13%;
+    width: 8%;
     text-align: left;
 }
 
