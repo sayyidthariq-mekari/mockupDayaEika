@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 12px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0;
+    background-color: white;
+}
+
+/* Header */
+.header {
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header h1 u {
+    text-decoration: underline;
+}
+
+/* Periode */
+.periode {
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.periode .label {
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.periode .value {
+    font-weight: normal;
+}
+
+/* Table */
+.data-table {
+    width: 100%;
+    max-width: 750px;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    font-size: 11px;
+}
+
+.data-table thead th {
+    border: 1px solid #000;
+    padding: 8px 5px;
+    text-align: center;
+    background-color: #ffffff;
+    font-weight: normal;
+}
+
+.data-table thead th:first-child {
+    border: none;
+    background-color: transparent;
+}
+
+.data-table tbody td {
+    border: 1px solid #000;
+    padding: 6px 5px;
+    text-align: center;
+}
+
+.data-table tbody td:first-child {
+    text-align: left;
+    padding-left: 10px;
+    width: 280px;
+}
+
+.data-table tbody tr.total-row td {
+    border-top: 2px solid #000;
+}
+
+/* Signature Section */
+.signature-section {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.signature-row-top,
+.signature-row-middle,
+.signature-row-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.left-col,
+.center-col,
+.right-col {
+    flex: 1;
+}
+
+.left-col {
+    text-align: left;
+}
+
+.center-col {
+    text-align: center;
+}
+
+.right-col {
+    text-align: right;
+}
+
+.signature-row-bottom {
+    margin-top: 80px;
+}
+
+.signature-row-bottom .left-col {
+    display: flex;
+    gap: 80px;
+}
+
+/* Print styles */
+@media print {
+    body {
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
+}
