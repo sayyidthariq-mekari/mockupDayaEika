@@ -45,12 +45,13 @@
     .label-col { width: 140px; white-space: nowrap; }
     .separator-col { width: 15px; text-align: center; }
     .value-col { font-weight: normal; } 
-    .value-col-bold {font-weight: 800;}
+    .value-col-bold { font-weight: 800 ;}
 
     .container-lists-wrapper {
         display: flex;
         justify-content: space-between;
         gap: 4%; 
+        margin-bottom: 5px; 
     }
 
     .list-block {
@@ -63,7 +64,7 @@
     }
 
     .container-table thead th {
-        text-align: center;
+        text-align: center; 
         padding: 5px 0;
         border-bottom: 1px solid #000;
         font-weight: normal;
@@ -73,17 +74,17 @@
     .container-table tbody td {
         padding: 4px 0;
         font-size: 11px;
-        text-align: left;
+        text-align: left; 
     }
     
     .col-qty { width: 35%; }      
     .col-container { width: 45%; } 
     .col-berat { width: 20%; }    
 
-    .bottom-line {
+    .full-width-line {
         border-bottom: 2px solid #000;
-        margin-top: 2px;
         width: 100%;
+        margin-top: 0px;
     }
 
 </style>
@@ -120,7 +121,7 @@
         <tr>
             <td class="label-col">Party</td>
             <td class="separator-col">:</td>
-            <td class="value-col">8.00 x 40 FEET HC</td>
+            <td class="value-col">10.00 x 40 FEET HC</td>
         </tr>
         <tr><td colspan="3" style="height: 10px;"></td></tr>
         <tr>
@@ -190,9 +191,13 @@
                         <td>CMAU4341490</td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>MSCU9822101</td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
-            <div class="bottom-line"></div>
         </div>
 
         <div class="list-block">
@@ -225,12 +230,18 @@
                         <td>TCNU2662300</td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td>1.00 40 FEET HC</td>
+                        <td>WHLU5510922</td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
-            <div class="bottom-line"></div>
         </div>
 
     </div>
+    
+    <div class="full-width-line"></div>
 
 </div>
 
