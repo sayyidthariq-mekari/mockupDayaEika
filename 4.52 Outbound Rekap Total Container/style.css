@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 12px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0;
+    background-color: white;
+}
+
+/* Header */
+.header {
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 14px;
+    font-weight: 750;
+    text-decoration: underline;
+}
+
+
+
+/* Periode */
+.periode {
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.periode .label {
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.periode .value {
+    font-weight: normal;
+}
+
+/* Table */
+.data-table {
+    width: 400px;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+
+.data-table thead th {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    background-color: #ffffff;
+    font-weight: normal;
+}
+
+.data-table thead th:first-child {
+    border-top: none;
+    border-left: none;
+}
+
+.data-table tbody td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.data-table tbody td:first-child {
+    width: 70%;
+}
+
+.data-table tbody td:last-child {
+    width: 30%;
+    text-align: center;
+}
+
+.data-table tbody tr.total-row td {
+    border-top: 2px solid #000;
+}
+
+/* Signature Section */
+.signature-section {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.signature-container {
+    display: flex;
+    gap: 200px;
+    width: 100%;
+}
+
+/* Left Section */
+.signature-left {
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signature-left .label-row {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.signature-left .names-row {
+    margin-top: 80px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+/* Right Section */
+.signature-right {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signature-right .date-row {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.signature-right .label-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 12px;
+    gap: 80px;
+}
+
+.signature-right .names-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 80px;
+    gap: 80px;
+}
+
+
+
+/* Print styles */
+@media print {
+    body {
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
+}

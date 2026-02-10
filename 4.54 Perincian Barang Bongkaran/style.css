@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Header Section */
+.header-section {
+    margin-bottom: 10px;
+}
+
+.title-left {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Details Section */
+.details-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+
+.detail-item {
+    display: flex;
+    gap: 5px;
+}
+
+.detail-item .label {
+    min-width: 70px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.detail-item .separator {
+    margin: 0 5px;
+}
+
+.detail-item .value {
+    flex: 1;
+}
+
+/* Data Table */
+.data-table {
+    width: 55%;
+    border-collapse: collapse;
+    font-size: 9px;
+    margin-top: 10px;
+}
+
+.data-table tbody {
+    border-top: 1px solid #000;
+}
+
+.data-table td {
+    border: none;
+    padding: 8px 10px;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.data-table td.left-column {
+    width: 30%;
+}
+
+.data-table td.right-column {
+    width: 70%;
+}
+
+.data-table tr:first-child td {
+    padding-top: 10px;
+}
