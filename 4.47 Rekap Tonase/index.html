@@ -69,10 +69,6 @@
         border-bottom: 2px solid #000;
     }
 
-    .header-tonase {
-        text-align: right;
-    }
-
     .sub-header-row td {
         font-weight: bold;
         text-decoration: underline;
@@ -82,16 +78,41 @@
 
     .data-row td {
         padding: 3px 5px;
+        vertical-align: middle; 
     }
-    
+
     .col-tonase {
-        text-align: right;
+        padding: 0;
+    }
+
+    .tonase-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 3px 5px;
+    }
+
+    .tonase-val {
+        font-weight: normal;
+    }
+
+    .tonase-unit {
+        display: inline-block;
+        width: 50px;      
+        text-align: left;  
+        padding-left: 10px; 
+        font-size: 10px;
+        font-weight: bold; 
+    }
+
+    .header-tonase {
+        text-align: right !important;
+        padding-right: 55px !important;
     }
 
     .footer-row td {
         border-top: 2px solid #000;
         font-weight: bold;
-        text-align: right;
     }
     
     .final-line-row td {
@@ -138,83 +159,142 @@
             <tr class="sub-header-row">
                 <td colspan="6">PT.MITRA BANDAR NIAGA</td>
             </tr>
+            
             <tr class="data-row">
                 <td>03-05-25</td>
                 <td>2505006</td>
                 <td>MTT REYA 25RY017N</td>
                 <td>KAPUAS BESAR, PT.</td>
                 <td>NATURAL RUBBER</td>
-                <td class="col-tonase">111.36 TON(S)</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">111.36</span>
+                        <span class="tonase-unit">TON(S)</span>
+                    </div>
+                </td>
             </tr>
+
             <tr class="data-row">
                 <td>03-05-25</td>
                 <td>2505007</td>
                 <td>MTT REYA 25RY017N</td>
                 <td>KAPUAS BESAR, PT.</td>
                 <td>NATURAL RUBBER</td>
-                <td class="col-tonase">132.96 TON(S)</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">132.96</span>
+                        <span class="tonase-unit">TON(S)</span>
+                    </div>
+                </td>
             </tr>
+
             <tr class="data-row">
                 <td>03-05-25</td>
                 <td>2505008</td>
                 <td>MTT REYA 25RY017N</td>
                 <td>KAPUAS BESAR, PT.</td>
                 <td>NATURAL RUBBER</td>
-                <td class="col-tonase">132.96 TON(S)</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">132.96</span>
+                        <span class="tonase-unit">TON(S)</span>
+                    </div>
+                </td>
             </tr>
+
             <tr class="data-row">
                 <td>05-05-25</td>
                 <td>2504081</td>
                 <td>WAN HAI 323 N048</td>
                 <td>KAPUAS BESAR, PT.</td>
                 <td>NATURAL RUBBER</td>
-                <td class="col-tonase">22.27 TON(S)</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">22.27</span>
+                        <span class="tonase-unit">TON(S)</span>
+                    </div>
+                </td>
             </tr>
+
             <tr class="data-row">
                 <td>05-05-25</td>
                 <td>2504082</td>
                 <td>WAN HAI 323 N048</td>
                 <td>KAPUAS BESAR, PT.</td>
                 <td>NATURAL RUBBER</td>
-                <td class="col-tonase">103.88 TON(S)</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">103.88</span>
+                        <span class="tonase-unit">TON(S)</span>
+                    </div>
+                </td>
             </tr>
+
             <tr class="data-row">
                 <td>05-05-25</td>
                 <td>2504083</td>
                 <td>WAN HAI 323 N048</td>
                 <td>KAPUAS BESAR, PT.</td>
                 <td>NATURAL RUBBER</td>
-                <td class="col-tonase">66.82 TON(S)</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">66.82</span>
+                        <span class="tonase-unit">TON(S)</span>
+                    </div>
+                </td>
             </tr>
+
             <tr class="data-row">
                 <td>05-05-25</td>
                 <td>2504084</td>
                 <td>WAN HAI 323 N048</td>
                 <td>KAPUAS BESAR, PT.</td>
                 <td>NATURAL RUBBER</td>
-                <td class="col-tonase">111.36 TON(S)</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">111.36</span>
+                        <span class="tonase-unit">TON(S)</span>
+                    </div>
+                </td>
             </tr>
+
             <tr class="data-row">
                 <td>07-05-25</td>
                 <td>2505009</td>
                 <td>SINAR BAJO 073N</td>
                 <td>KAPUAS BESAR, PT.</td>
                 <td>NATURAL RUBBER</td>
-                <td class="col-tonase">124.38 TON(S)</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">124.38</span>
+                        <span class="tonase-unit">TON(S)</span>
+                    </div>
+                </td>
             </tr>
+
             <tr class="data-row">
                 <td>07-05-25</td>
                 <td>2505010</td>
                 <td>SINAR BAJO 073N</td>
                 <td>KAPUAS BESAR, PT.</td>
                 <td>NATURAL RUBBER</td>
-                <td class="col-tonase">124.38 TON(S)</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">124.38</span>
+                        <span class="tonase-unit">TON(S)</span>
+                    </div>
+                </td>
             </tr>
         </tbody>
         <tfoot>
             <tr class="footer-row">
                 <td colspan="5"></td>
-                <td class="col-tonase">930.36</td>
+                <td class="col-tonase">
+                    <div class="tonase-wrapper">
+                        <span class="tonase-val">930.36</span>
+                        <span class="tonase-unit"></span>
+                    </div>
+                </td>
             </tr>
             <tr class="final-line-row">
                 <td colspan="6"></td>
