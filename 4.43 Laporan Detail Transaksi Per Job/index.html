@@ -2,13 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laporan Detail Transaksi Per Job</title>
 <style>
-    @page {
-        size: A4 portrait;
-        margin: 10mm;     
-    }
 
     body {
         font-family: Arial, Helvetica, sans-serif;
@@ -16,27 +11,23 @@
         color: #000;
         line-height: 1.4;
         margin: 0;
-        padding: 0;
+        padding: 20px; 
         background-color: #fff;
     }
 
     .container {
-        width: 100%;
-        max-width: 210mm; 
+        width: 100%; 
         margin: 0 auto;
-        padding: 10px; 
         box-sizing: border-box; 
     }
 
-    .header {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
+    .header-table {
+        width: 100%;
         margin-bottom: 20px;
     }
-
     .timestamp {
         font-size: 11px;
+        text-align: right; 
     }
 
     .details-table {
@@ -44,7 +35,6 @@
         border-collapse: collapse;
         margin-bottom: 30px;
     }
-
     .details-table td {
         padding: 2px 5px;
         vertical-align: top;
@@ -55,46 +45,38 @@
     .value-col { font-weight: normal; } 
     .value-col-bold { font-weight: 800 ;}
 
-    .container-lists-wrapper {
-        display: flex;
-        justify-content: space-between;
-        gap: 4%; 
-        margin-bottom: 5px; 
+    .container-layout-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 5px;
+    }
+    .container-layout-table td {
+        vertical-align: top;
     }
 
-    .list-block {
-        width: 48%;
-    }
-
-    .container-table {
+    .container-list-table {
         width: 100%; 
         border-collapse: collapse;
     }
-
-    .container-table thead th {
+    .container-list-table th {
         text-align: left; 
         padding: 5px 0 2px 0; 
         border-bottom: 1px solid #000;
         font-weight: normal;
         font-size: 11px;
-        vertical-align: bottom;
     }
-    
-    .container-table tbody td {
+    .container-list-table td {
         padding: 2px 0 4px 0;
         font-size: 11px;
         text-align: left; 
         vertical-align: top;
+        border-bottom: 1px solid #eee; 
     }
     
-    .col-qty { width: 35%; }      
-    .col-container { width: 40%; } 
-    .col-berat { width: 25%; }    
-
     .full-width-line {
         border-bottom: 2px solid #000;
         width: 100%;
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
 </style>
@@ -102,9 +84,12 @@
 <body>
 
 <div class="container">
-    <div class="header">
-        <div class="timestamp">08-05-2025  10:13:52</div>
-    </div>
+    
+    <table class="header-table" border="0">
+        <tr>
+            <td class="timestamp">08-05-2025  10:13:52</td>
+        </tr>
+    </table>
 
     <table class="details-table">
         <tr>
@@ -168,87 +153,89 @@
         </tr>
     </table>
 
-    <div class="container-lists-wrapper">
-        
-        <div class="list-block">
-            <table class="container-table">
-                <thead>
-                    <tr>
-                        <th class="col-qty">Qty</th>
-                        <th class="col-container">No. Container</th>
-                        <th class="col-berat">Berat</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>GAOU6795878</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>RFCU5106747</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>TGBU6823362</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>CMAU4341490</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>MSCU9822101</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <table class="container-layout-table" border="0">
+        <tr>
+            <td width="48%">
+                <table class="container-list-table">
+                    <thead>
+                        <tr>
+                            <th width="35%">Qty</th>
+                            <th width="40%">No. Container</th>
+                            <th width="25%">Berat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>GAOU6795878</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>RFCU5106747</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>TGBU6823362</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>CMAU4341490</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>MSCU9822101</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            
+            <td width="4%"></td>
 
-        <div class="list-block">
-            <table class="container-table">
-                <thead>
-                    <tr>
-                        <th class="col-qty">Qty</th>
-                        <th class="col-container">No. Container</th>
-                        <th class="col-berat">Berat</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>TGHU6344063</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>BMOU5864506</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>CMAU7264503</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>TCNU2662300</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1.00 40 FEET HC</td>
-                        <td>WHLU5510922</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
+            <td width="48%">
+                <table class="container-list-table">
+                    <thead>
+                        <tr>
+                            <th width="35%">Qty</th>
+                            <th width="40%">No. Container</th>
+                            <th width="25%">Berat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>TGHU6344063</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>BMOU5864506</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>CMAU7264503</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>TCNU2662300</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.00 40 FEET HC</td>
+                            <td>WHLU5510922</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
     
     <div class="full-width-line"></div>
 
